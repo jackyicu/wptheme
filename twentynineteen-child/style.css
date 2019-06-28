@@ -13,5 +13,47 @@
 */
 
 .site-content {
-    background-color: aliceblue
+    background-color: lightblue
 }
+.entry .entry-title{
+	background-color:white
+}
+[class*="wp-block-"] {
+	background-color:white;
+}
+.site-logo {
+    position: relative;
+    z-index: 999;
+    margin-bottom: calc(.66 * 1rem);
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .site-logo {
+      margin-bottom: 0;
+      position: absolute;
+      left: 0
+      top: 4px;
+      z-index: 999;
+    }
+  }
+.site-logo .custom-logo-link {
+    display: inline-block;
+    width: auto;
+    height: 64px;
+    overflow: hidden;
+    z-index: 999
+  }
+  @media only screen and (min-width: 768px) {
+    .site-logo .custom-logo-link {
+      width: auto;
+      height: 64px;
+    }
+  }
+
+  .site-title {
+      display: none;
+    /* margin: auto;
+    display: inline;
+    color: #111; */
+    /* When there is no description set, make sure navigation appears below title. */
+  }
