@@ -11,3 +11,15 @@ function my_theme_enqueue_styles() {
         wp_get_theme()->get('Version')
     );
 }
+
+function theme_prefix_setup() {
+	
+	add_theme_support( 'custom-logo', array(
+		'height'      => 50,
+		'width'       => 158,
+        'flex-width'  => false,
+        'flex-height' => false,
+	) );
+
+}
+add_action( 'after_setup_theme', 'theme_prefix_setup', 11 );

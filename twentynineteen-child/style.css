@@ -12,48 +12,158 @@
  Text Domain:  twentynineteenchild
 */
 
-.site-content {
-    background-color: lightblue
-}
 .entry .entry-title{
 	background-color:white
 }
 [class*="wp-block-"] {
 	background-color:white;
 }
-.site-logo {
+
+.site-header {
+  padding: 1rem 0 0 0;
+}
+
+.site-branding {
+  margin: 0;
+}
+
+.primary-nav-row {
+  background-color: cornflowerblue;
+  padding: 0.25rem 0.5rem 0.5rem 0.5rem;
+}
+
+@media only screen and (min-width: 768px){
+  .site-header {
+    padding: 1rem 0 0 0;
+  }
+
+  .site-branding {
+    margin: 0;
+  }
+
+  .logo-row {
+    display: block;
+    padding: 0 calc(10% + 60px);
+    margin: 0;
+  }
+
+  .primary-nav-row {
+    display: block;
+    margin: 0;
+    padding: 0.5rem calc(10% + 60px);
+    background-color: cornflowerblue;
+  }
+}
+
+
+  .site-logo {
+    display: inline-block;
     position: relative;
     z-index: 999;
-    margin-bottom: calc(.66 * 1rem);
+  }
+  .site-logo .custom-logo-link:hover, .site-logo .custom-logo-link:active, .site-logo .custom-logo-link:focus {
+    box-shadow: none;
   }
   
   @media only screen and (min-width: 768px) {
     .site-logo {
-      margin-bottom: 0;
-      position: absolute;
-      left: 0;
+      display: inline-block;
+      position: relative;
+      left: 4px;
       top: 4px;
       z-index: 999;
     }
   }
-.site-logo .custom-logo-link {
-    display: inline-block;
+    
+  .site-logo .custom-logo-link {
+    border-radius: 0;
+    box-sizing: auto;
+    box-shadow: none;
     width: auto;
-    height: 64px;
+    height: auto;
     overflow: hidden;
-    z-index: 999
+    transition: 200ms ease-in-out;
   }
+
   @media only screen and (min-width: 768px) {
     .site-logo .custom-logo-link {
-      width: auto;
-      height: 64px;
+      width: 160px;
+      height: 60px;
     }
   }
 
   .site-title {
-      display: none;
-    /* margin: auto;
-    display: inline;
-    color: #111; */
-    /* When there is no description set, make sure navigation appears below title. */
+    display: none;
+  }
+
+  .site-description {
+    display: none;
+  }
+  
+  /* .search-form {
+    display: inline-block;
+
+  } */
+  @media only screen and (min-width: 768px) {
+    .search-form {
+      float: right;
+    }
+  }
+
+  .main-navigation {
+    margin:0;
+  }
+
+  .main-navigation .main-menu > li {
+    color: black;
+  }
+  .main-navigation .main-menu > li > a {
+    color: black;
+  }
+  .main-navigation .sub-menu {
+    background-color:cornflowerblue
+  }
+  .main-navigation .sub-menu > li.menu-item-has-children .submenu-expand {
+    color: black;
+  }
+  .main-navigation .sub-menu > li > a,
+  .main-navigation .sub-menu > li > .menu-item-link-return {
+    color: black;
+  }
+  .main-navigation .sub-menu > li > a:hover, .main-navigation .sub-menu > li > a:focus,
+  .main-navigation .sub-menu > li > .menu-item-link-return:hover,
+  .main-navigation .sub-menu > li > .menu-item-link-return:focus {
+    background: cornflowerblue;
+    color: #005177;
+  }
+  
+  .social-navigation {
+    float: right;
+    margin: 0;
+  }
+
+  h1:not(.site-title):before,
+  h2:before {
+    display: none;
+  }
+
+  .entry .entry-title:before {
+    display: none;
+  }
+
+  .search-form .search-submit {
+    background-color: inherit;
+    border: none;
+  }
+
+  button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
+    background: cornflowerblue;
+    color: white;
+  }
+  input[type="button"], input[type="reset"], input[type="submit"] {
+    background: cornflowerblue;
+  }
+
+  .nav_search input[type="text"] {
+    color: #000;
   }
